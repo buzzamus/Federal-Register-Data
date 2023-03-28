@@ -1,0 +1,11 @@
+## User settings
+FederalAgencies.xcodeproj/project.xcworkspace/xcuserdata/*
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/

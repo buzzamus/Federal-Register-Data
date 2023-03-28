@@ -18,6 +18,7 @@
 		E6DF8B2C29D37C3A0014AD2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2529D37C3A0014AD2B /* ContentView.swift */; };
 		E6DF8B2D29D37C3A0014AD2B /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2629D37C3A0014AD2B /* Agency.swift */; };
 		E6DF8B3029D37C3A0014AD2B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B2929D37C3A0014AD2B /* .gitignore */; };
+		E6DF8B3229D37D750014AD2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B3129D37D750014AD2B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E6DF8B2529D37C3A0014AD2B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../FederalAgencies/FederalAgencies/ContentView.swift; sourceTree = "<group>"; };
 		E6DF8B2629D37C3A0014AD2B /* Agency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
 		E6DF8B2929D37C3A0014AD2B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E6DF8B3129D37D750014AD2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		E6DF8AED29D37C030014AD2B = {
 			isa = PBXGroup;
 			children = (
+				E6DF8B3129D37D750014AD2B /* README.md */,
 				E6DF8AF829D37C030014AD2B /* FederalRegisterData */,
 				E6DF8B0929D37C030014AD2B /* FederalRegisterDataTests */,
 				E6DF8B1329D37C030014AD2B /* FederalRegisterDataUITests */,
@@ -245,6 +248,7 @@
 			files = (
 				E6DF8B0129D37C030014AD2B /* Preview Assets.xcassets in Resources */,
 				E6DF8B3029D37C3A0014AD2B /* .gitignore in Resources */,
+				E6DF8B3229D37D750014AD2B /* README.md in Resources */,
 				E6DF8AFE29D37C030014AD2B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

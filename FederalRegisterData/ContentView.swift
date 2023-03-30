@@ -46,14 +46,15 @@ struct ContentView: View {
             fatalError("Invalid Federal Register Endpoint")
         }
         
-        URLSession.shared.dataTask(with: url) { data, response, error  in
-            let agencyData = try! JSONDecoder().decode([Agency].self, from: data!)
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
             
-            DispatchQueue.main.async {
+            if let agencyData = try? JSONDecoder().decode([Agency].self, from: data) {
                 agencies = agencyData
-                print(agencies[0].url)
             }
-        }.resume()
+        } catch {
+            print("Invalid URL")
+        }
     }
 }
 

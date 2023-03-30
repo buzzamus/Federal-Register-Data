@@ -12,10 +12,13 @@ struct ContentView: View {
         GridItem(.adaptive(minimum: 300))
     ]
     @State var agencies = [Agency]()
+    @State var connectionError = false
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
+                    Text(offlineMessage())
+                        .foregroundColor(.red)
                     ForEach(agencies) { agency in
                         NavigationLink {
                             AgencyView(agency: agency)
@@ -41,6 +44,14 @@ struct ContentView: View {
         }
     }
     
+    func offlineMessage() -> String {
+        if self.connectionError {
+            return "There was an error retrieving the data"
+        } else {
+            return ""
+        }
+    }
+    
     func retrieveData() async {
         guard let url = URL(string: Configuration.agenciesEndpoint) else {
             fatalError("Invalid Federal Register Endpoint")
@@ -53,7 +64,8 @@ struct ContentView: View {
                 agencies = agencyData
             }
         } catch {
-            print("Invalid URL")
+            print("Error Retrieving Data")
+            connectionError = true
         }
     }
 }

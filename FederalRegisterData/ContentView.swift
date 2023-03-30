@@ -17,8 +17,17 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    Text(offlineMessage)
-                        .foregroundColor(.red)
+                    Divider()
+                    if (connectionError == true) {
+                        Section {
+                            Text(offlineMessage)
+                                .frame(width: 330)
+                                .foregroundColor(.red)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(10)
+                        }.border(.red)
+                    }
                     ForEach(agencies) { agency in
                         NavigationLink {
                             AgencyView(agency: agency)
@@ -46,7 +55,7 @@ struct ContentView: View {
     
     var offlineMessage: String {
         if self.connectionError {
-            return "There was an error retrieving the data"
+            return "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later."
         } else {
             return ""
         }

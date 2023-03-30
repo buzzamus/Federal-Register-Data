@@ -35,12 +35,13 @@ struct ContentView: View {
             }
             .navigationTitle("Federal Register Data").font(.title)
             .preferredColorScheme(.dark)
+            .task {
+                await retrieveData()
+            }
         }
-
-        .onAppear(perform: retrieveData)
     }
     
-    func retrieveData() {
+    func retrieveData() async {
         guard let url = URL(string: Configuration.agenciesEndpoint) else {
             fatalError("Invalid Federal Register Endpoint")
         }

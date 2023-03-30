@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E6260EA829D3BC3C0074B8F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260EA729D3BC3C0074B8F0 /* ContentView.swift */; };
+		E6260EAA29D3C49E0074B8F0 /* AgencyViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260EA929D3C49E0074B8F0 /* AgencyViewTest.swift */; };
 		E6DF8AFA29D37C030014AD2B /* FederalRegisterDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8AF929D37C030014AD2B /* FederalRegisterDataApp.swift */; };
 		E6DF8AFE29D37C030014AD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8AFD29D37C030014AD2B /* Assets.xcassets */; };
 		E6DF8B0129D37C030014AD2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B0029D37C030014AD2B /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		E6260EA729D3BC3C0074B8F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6260EA929D3C49E0074B8F0 /* AgencyViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyViewTest.swift; sourceTree = "<group>"; };
 		E6DF8AF629D37C030014AD2B /* FederalRegisterData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalRegisterData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DF8AF929D37C030014AD2B /* FederalRegisterDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalRegisterDataApp.swift; sourceTree = "<group>"; };
 		E6DF8AFD29D37C030014AD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				E6DF8B1429D37C030014AD2B /* FederalRegisterDataUITests.swift */,
 				E6DF8B1629D37C030014AD2B /* FederalRegisterDataUITestsLaunchTests.swift */,
+				E6260EA929D3C49E0074B8F0 /* AgencyViewTest.swift */,
 			);
 			path = FederalRegisterDataUITests;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				E6DF8B1529D37C030014AD2B /* FederalRegisterDataUITests.swift in Sources */,
 				E6DF8B1729D37C030014AD2B /* FederalRegisterDataUITestsLaunchTests.swift in Sources */,
+				E6260EAA29D3C49E0074B8F0 /* AgencyViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

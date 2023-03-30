@@ -12,6 +12,8 @@ struct AgencyView: View {
     var body: some View {
         ScrollView {
             Text(agency.name)
+                .font(.title)
+            Divider()
             Text(agency.description ?? "No Info Available")
             Link(" \(agency.name) Federal Register Web Page", destination: URL(string: agency.url)!)
             

@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    Text(offlineMessage())
+                    Text(offlineMessage)
                         .foregroundColor(.red)
                     ForEach(agencies) { agency in
                         NavigationLink {
@@ -44,7 +44,7 @@ struct ContentView: View {
         }
     }
     
-    func offlineMessage() -> String {
+    var offlineMessage: String {
         if self.connectionError {
             return "There was an error retrieving the data"
         } else {

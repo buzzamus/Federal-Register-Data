@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let offlineMessage = "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later."
     let columns = [
         GridItem(.adaptive(minimum: 300))
     ]
@@ -18,7 +19,7 @@ struct ContentView: View {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     Divider()
-                    if (connectionError == true) {
+                    if (self.connectionError) {
                         Section {
                             Text(offlineMessage)
                                 .frame(width: 330)
@@ -50,14 +51,6 @@ struct ContentView: View {
             .task {
                 await retrieveData()
             }
-        }
-    }
-    
-    var offlineMessage: String {
-        if self.connectionError {
-            return "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later."
-        } else {
-            return ""
         }
     }
     

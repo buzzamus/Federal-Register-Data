@@ -9,4 +9,8 @@ import Foundation
 
 struct Configuration {
     static let agenciesEndpoint = "https://www.federalregister.gov/api/v1/agencies/"
+    static let latestArticlesEndpoint = "https://www.federalregister.gov/api/v1/documents.json?fields[]=body_html_url&fields[]=document_number&fields[]=title&per_page=10&conditions[agencies][]="
 }
+
+// make call on AgencyView to latestArticlesEndpoint with agency-slug at end
+// then, for each create link to article to link to for browser view

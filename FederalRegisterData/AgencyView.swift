@@ -9,18 +9,50 @@ import SwiftUI
 
 struct AgencyView: View {
     let agency: Agency
+    @State var documents = [Document]()
+    @State var connectionError = false
     var body: some View {
         ScrollView {
             Text(agency.name)
                 .font(.title)
             Divider()
             Text(agency.description ?? "No Info Available")
-            Link(" \(agency.name) Federal Register Web Page", destination: URL(string: agency.url)!)
+            Divider()
+            Link("\(agency.name) Federal Register Web Page", destination: URL(string: agency.url)!)
             
-            if (agency.agency_url != nil) {
+            Divider()
+            Text("Latest published articles")
+                .font(.title)
+            Divider()
+            ForEach(documents) { document in
+                Text(document.title)
+                Link("Read Full Article", destination: URL(string: document.body_html_url)!)
                 Divider()
-                Link("\(agency.name)'s website", destination: URL(string: agency.agency_url!)!)
             }
+        }
+        .task {
+            await retrieveData()
+        }
+    }
+    
+    //Todo: too much in common with ContentView retrieveData method.
+    // Make a separate method in a shared location that handles differences
+    func retrieveData() async {
+        let fullDocumentsUrl = Configuration.latestArticlesEndpoint + agency.slug
+        print(fullDocumentsUrl)
+        guard let url = URL(string: fullDocumentsUrl) else {
+            fatalError("Invalid Federal Register Documents Endpoint")
+        }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            if let agencyData = try? JSONDecoder().decode(DocumentResult.self, from: data) {
+                documents = agencyData.results
+            }
+        } catch {
+            print("Error Retrieving Data")
+            connectionError = true
         }
     }
 }

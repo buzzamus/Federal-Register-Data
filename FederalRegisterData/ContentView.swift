@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    let offlineMessage = "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later."
     let columns = [
         GridItem(.adaptive(minimum: 300))
     ]
+    let errorView = ErrorView(errorMessage: "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later.")
     @State var agencies = [Agency]()
     @State var connectionError = false
     var body: some View {
@@ -20,14 +20,7 @@ struct ContentView: View {
                 LazyVGrid(columns: columns) {
                     Divider()
                     if (self.connectionError) {
-                        Section {
-                            Text(offlineMessage)
-                                .frame(width: 330)
-                                .foregroundColor(.red)
-                                .font(.headline)
-                                .multilineTextAlignment(.leading)
-                                .padding(10)
-                        }.border(.red)
+                        errorView.body
                     }
                     ForEach(agencies) { agency in
                         NavigationLink {
@@ -47,7 +40,6 @@ struct ContentView: View {
                 .padding([.horizontal, .bottom])
             }
             .navigationTitle("Federal Register Data").font(.title)
-            .preferredColorScheme(.dark)
             .task {
                 await retrieveData()
             }

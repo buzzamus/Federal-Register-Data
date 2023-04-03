@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AgencyView: View {
     let agency: Agency
+    let errorView = ErrorView(errorMessage: "The agency information could not be retrieved at this time.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later.")
     @State var documents = [Document]()
     @State var connectionError = false
     var body: some View {
@@ -24,6 +25,9 @@ struct AgencyView: View {
             Text("Latest published articles")
                 .font(.title)
             Divider()
+            if (documents.isEmpty) {
+                errorView.body
+            }
             ForEach(documents) { document in
                 Text(document.title)
                 Link("Read Full Article", destination: URL(string: document.body_html_url)!)
@@ -39,7 +43,6 @@ struct AgencyView: View {
     // Make a separate method in a shared location that handles differences
     func retrieveData() async {
         let fullDocumentsUrl = Configuration.latestArticlesEndpoint + agency.slug
-        print(fullDocumentsUrl)
         guard let url = URL(string: fullDocumentsUrl) else {
             fatalError("Invalid Federal Register Documents Endpoint")
         }
@@ -59,7 +62,7 @@ struct AgencyView: View {
 
 struct AgencyView_Previews: PreviewProvider {
     static var previews: some View {
-        let testAgency = Agency(agency_url: "www.myURL.com", description: "Test Description of a completely fake Agency. They started in 1998 to cut down on fake agencies", id: 2, name: "Fake Agency", slug: "fake-Agency", url: "fake-agency.gov.uk")
+        let testAgency = Agency(agency_url: "www.myURL.com", description: "Test Description of a completely fake Agency. They started in 1998 to cut down on fake agencies", id: 2, name: "Fake Agency", slug: "agriculture-department", url: "fake-agency.gov.uk")
         AgencyView(agency: testAgency)
     }
 }

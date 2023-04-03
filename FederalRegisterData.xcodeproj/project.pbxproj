@@ -10,6 +10,7 @@
 		E6260EA829D3BC3C0074B8F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260EA729D3BC3C0074B8F0 /* ContentView.swift */; };
 		E6B648E429DA591F00613B97 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E329DA591F00613B97 /* Document.swift */; };
 		E6B648E629DA62AF00613B97 /* DocumentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E529DA62AF00613B97 /* DocumentResult.swift */; };
+		E6B648EA29DA677600613B97 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E929DA677600613B97 /* ErrorView.swift */; };
 		E6DF8AFA29D37C030014AD2B /* FederalRegisterDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8AF929D37C030014AD2B /* FederalRegisterDataApp.swift */; };
 		E6DF8AFE29D37C030014AD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8AFD29D37C030014AD2B /* Assets.xcassets */; };
 		E6DF8B0129D37C030014AD2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B0029D37C030014AD2B /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		E6260EA729D3BC3C0074B8F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6B648E329DA591F00613B97 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		E6B648E529DA62AF00613B97 /* DocumentResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentResult.swift; sourceTree = "<group>"; };
+		E6B648E929DA677600613B97 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E6DF8AF629D37C030014AD2B /* FederalRegisterData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalRegisterData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DF8AF929D37C030014AD2B /* FederalRegisterDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalRegisterDataApp.swift; sourceTree = "<group>"; };
 		E6DF8AFD29D37C030014AD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E6DF8B2629D37C3A0014AD2B /* Agency.swift */,
 				E6B648E529DA62AF00613B97 /* DocumentResult.swift */,
 				E6260EA729D3BC3C0074B8F0 /* ContentView.swift */,
+				E6B648E929DA677600613B97 /* ErrorView.swift */,
 				E6DF8B2329D37C3A0014AD2B /* AgencyView.swift */,
 				E6B648E329DA591F00613B97 /* Document.swift */,
 				E6DF8B2429D37C3A0014AD2B /* Configuration.swift */,
@@ -287,6 +290,7 @@
 				E6DF8B2D29D37C3A0014AD2B /* Agency.swift in Sources */,
 				E6B648E429DA591F00613B97 /* Document.swift in Sources */,
 				E6DF8B2A29D37C3A0014AD2B /* AgencyView.swift in Sources */,
+				E6B648EA29DA677600613B97 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,9 +30,12 @@ struct ContentView: View {
                                 Text(agency.name)
                                     .font(.title)
                                     .multilineTextAlignment(.center)
+                                    .fontDesign(.monospaced)
                             }
-                            .padding(.vertical)
                             .frame(maxWidth: .infinity)
+                            .padding(.vertical, 20)
+                            .background(.yellow)
+                            .clipShape(RoundedRectangle(cornerRadius: 25))
                         }
                         Divider()
                     }
@@ -41,12 +44,12 @@ struct ContentView: View {
             }
             .navigationTitle("Federal Register Data").font(.title)
             .task {
-                await retrieveData()
+                await retrieveAgenciesData()
             }
         }
     }
     
-    func retrieveData() async {
+    func retrieveAgenciesData() async {
         guard let url = URL(string: Configuration.agenciesEndpoint) else {
             fatalError("Invalid Federal Register Endpoint")
         }

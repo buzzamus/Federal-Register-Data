@@ -35,13 +35,13 @@ struct AgencyView: View {
             }
         }
         .task {
-            await retrieveData()
+            await retrieveDocumentsData()
         }
     }
     
     //Todo: too much in common with ContentView retrieveData method.
     // Make a separate method in a shared location that handles differences
-    func retrieveData() async {
+    func retrieveDocumentsData() async {
         let fullDocumentsUrl = Configuration.latestArticlesEndpoint + agency.slug
         guard let url = URL(string: fullDocumentsUrl) else {
             fatalError("Invalid Federal Register Documents Endpoint")

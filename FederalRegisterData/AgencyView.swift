@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AgencyView: View {
     let agency: Agency
-    let errorView = ErrorView(errorMessage: "The agency information could not be retrieved at this time.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later.")
+    let errorView = ErrorView(errorMessage: Configuration.failedNetworkRequestText)
     @State var documents = [Document]()
     @State var connectionError = false
     var body: some View {

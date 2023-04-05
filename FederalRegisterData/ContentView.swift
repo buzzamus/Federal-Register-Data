@@ -11,7 +11,7 @@ struct ContentView: View {
     let columns = [
         GridItem(.adaptive(minimum: 300))
     ]
-    let errorView = ErrorView(errorMessage: "There was an error retrieving the data.\n Either the service is down, or you are not connected to wifi or a mobile network.\n Try again later.")
+    let errorView = ErrorView(errorMessage: Configuration.failedNetworkRequestText)
     @State var agencies = [Agency]()
     @State var connectionError = false
     var body: some View {

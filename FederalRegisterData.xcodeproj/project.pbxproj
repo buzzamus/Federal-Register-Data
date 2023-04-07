@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60A856F29DF4B30009B8007 /* AgencyIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A856E29DF4B30009B8007 /* AgencyIndexView.swift */; };
+		E60A857129DF546B009B8007 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A857029DF546B009B8007 /* DocumentsView.swift */; };
 		E6260EA829D3BC3C0074B8F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260EA729D3BC3C0074B8F0 /* ContentView.swift */; };
+		E6649F3E29DE107900829A0D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6649F3D29DE107900829A0D /* WebView.swift */; };
 		E6B648E429DA591F00613B97 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E329DA591F00613B97 /* Document.swift */; };
 		E6B648E629DA62AF00613B97 /* DocumentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E529DA62AF00613B97 /* DocumentResult.swift */; };
 		E6B648EA29DA677600613B97 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B648E929DA677600613B97 /* ErrorView.swift */; };
@@ -18,7 +21,7 @@
 		E6DF8B1529D37C030014AD2B /* FederalRegisterDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B1429D37C030014AD2B /* FederalRegisterDataUITests.swift */; };
 		E6DF8B1729D37C030014AD2B /* FederalRegisterDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B1629D37C030014AD2B /* FederalRegisterDataUITestsLaunchTests.swift */; };
 		E6DF8B2A29D37C3A0014AD2B /* AgencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2329D37C3A0014AD2B /* AgencyView.swift */; };
-		E6DF8B2B29D37C3A0014AD2B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2429D37C3A0014AD2B /* Configuration.swift */; };
+		E6DF8B2B29D37C3A0014AD2B /* APIRequestsAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2429D37C3A0014AD2B /* APIRequestsAgent.swift */; };
 		E6DF8B2D29D37C3A0014AD2B /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DF8B2629D37C3A0014AD2B /* Agency.swift */; };
 		E6DF8B3029D37C3A0014AD2B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B2929D37C3A0014AD2B /* .gitignore */; };
 		E6DF8B3229D37D750014AD2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6DF8B3129D37D750014AD2B /* README.md */; };
@@ -42,7 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E60A856E29DF4B30009B8007 /* AgencyIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyIndexView.swift; sourceTree = "<group>"; };
+		E60A857029DF546B009B8007 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		E6260EA729D3BC3C0074B8F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6649F3D29DE107900829A0D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E6B648E329DA591F00613B97 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		E6B648E529DA62AF00613B97 /* DocumentResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentResult.swift; sourceTree = "<group>"; };
 		E6B648E929DA677600613B97 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		E6DF8B1429D37C030014AD2B /* FederalRegisterDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalRegisterDataUITests.swift; sourceTree = "<group>"; };
 		E6DF8B1629D37C030014AD2B /* FederalRegisterDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalRegisterDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E6DF8B2329D37C3A0014AD2B /* AgencyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyView.swift; sourceTree = "<group>"; };
-		E6DF8B2429D37C3A0014AD2B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E6DF8B2429D37C3A0014AD2B /* APIRequestsAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestsAgent.swift; sourceTree = "<group>"; };
 		E6DF8B2629D37C3A0014AD2B /* Agency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
 		E6DF8B2929D37C3A0014AD2B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E6DF8B3129D37D750014AD2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -87,6 +93,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6649F3F29DE15CE00829A0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6260EA729D3BC3C0074B8F0 /* ContentView.swift */,
+				E6649F3D29DE107900829A0D /* WebView.swift */,
+				E6DF8B2329D37C3A0014AD2B /* AgencyView.swift */,
+				E60A857029DF546B009B8007 /* DocumentsView.swift */,
+				E60A856E29DF4B30009B8007 /* AgencyIndexView.swift */,
+				E6B648E929DA677600613B97 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6649F4029DE15F700829A0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6DF8B2429D37C3A0014AD2B /* APIRequestsAgent.swift */,
+				E6DF8B2629D37C3A0014AD2B /* Agency.swift */,
+				E6B648E329DA591F00613B97 /* Document.swift */,
+				E6B648E529DA62AF00613B97 /* DocumentResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E6DF8AED29D37C030014AD2B = {
 			isa = PBXGroup;
 			children = (
@@ -111,14 +141,9 @@
 		E6DF8AF829D37C030014AD2B /* FederalRegisterData */ = {
 			isa = PBXGroup;
 			children = (
+				E6649F4029DE15F700829A0D /* Models */,
+				E6649F3F29DE15CE00829A0D /* Views */,
 				E6DF8B2929D37C3A0014AD2B /* .gitignore */,
-				E6DF8B2629D37C3A0014AD2B /* Agency.swift */,
-				E6B648E529DA62AF00613B97 /* DocumentResult.swift */,
-				E6260EA729D3BC3C0074B8F0 /* ContentView.swift */,
-				E6B648E929DA677600613B97 /* ErrorView.swift */,
-				E6DF8B2329D37C3A0014AD2B /* AgencyView.swift */,
-				E6B648E329DA591F00613B97 /* Document.swift */,
-				E6DF8B2429D37C3A0014AD2B /* Configuration.swift */,
 				E6DF8AF929D37C030014AD2B /* FederalRegisterDataApp.swift */,
 				E6DF8AFD29D37C030014AD2B /* Assets.xcassets */,
 				E6DF8AFF29D37C030014AD2B /* Preview Content */,
@@ -283,12 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60A856F29DF4B30009B8007 /* AgencyIndexView.swift in Sources */,
 				E6DF8AFA29D37C030014AD2B /* FederalRegisterDataApp.swift in Sources */,
 				E6B648E629DA62AF00613B97 /* DocumentResult.swift in Sources */,
 				E6260EA829D3BC3C0074B8F0 /* ContentView.swift in Sources */,
-				E6DF8B2B29D37C3A0014AD2B /* Configuration.swift in Sources */,
+				E60A857129DF546B009B8007 /* DocumentsView.swift in Sources */,
+				E6DF8B2B29D37C3A0014AD2B /* APIRequestsAgent.swift in Sources */,
 				E6DF8B2D29D37C3A0014AD2B /* Agency.swift in Sources */,
 				E6B648E429DA591F00613B97 /* Document.swift in Sources */,
+				E6649F3E29DE107900829A0D /* WebView.swift in Sources */,
 				E6DF8B2A29D37C3A0014AD2B /* AgencyView.swift in Sources */,
 				E6B648EA29DA677600613B97 /* ErrorView.swift in Sources */,
 			);

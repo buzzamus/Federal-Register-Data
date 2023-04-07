@@ -16,7 +16,7 @@ struct Agency: Codable, Identifiable {
     let url: String
     
     init(agency_url: String?, description: String?, id: Int, name: String, slug: String, url: String) {
-        self.agency_url = agency_url ?? "N/A"
+        self.agency_url = agency_url
         self.description = description ?? "N/A"
         self.id = id
         self.name = name

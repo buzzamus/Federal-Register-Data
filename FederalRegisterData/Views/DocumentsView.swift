@@ -9,12 +9,8 @@ import SwiftUI
 
 struct DocumentsView: View {
     var documents = [Document]()
-    let errorView = ErrorView(errorMessage: APIRequestsAgent.failedNetworkRequestText)
     @State var showWebView = false
     var body: some View {
-        if (documents.isEmpty) {
-            errorView.body
-        }
         ForEach(documents) { document in
             VStack {
                 Text(document.title)

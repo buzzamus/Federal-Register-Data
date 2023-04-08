@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var documents = [Document]()
     @State var connectionError = false
     @State var requestInProgress = true
+    let errorView = ErrorView(errorMessage: APIRequestsAgent.failedNetworkRequestText)
     var body: some View {
         NavigationView {
             ScrollView {
@@ -28,6 +29,10 @@ struct ContentView: View {
                         Spacer()
                         Text("Latest Federal Register Articles")
                             .font(.body)
+                        
+                        if (self.connectionError) {
+                            errorView.body
+                        }
                         
                         if (requestInProgress) {
                             ProgressView("Retrieving Data...")

@@ -2,6 +2,8 @@
 
 An iOS app using the open Federal Register API to retrieve federal agency data.
 
+For support please email be at brentbusby86@gmail.com
+
 
 Upcoming Releases
 V1.0 - Initial Release for App Store

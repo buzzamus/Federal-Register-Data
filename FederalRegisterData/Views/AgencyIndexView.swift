@@ -19,7 +19,6 @@ struct AgencyIndexView: View {
         Text("All Agencies").font(.title)
         ScrollView {
             LazyVGrid(columns: columns) {
-                Divider()
                 if (self.connectionError) {
                     errorView.body
                 }
@@ -43,11 +42,11 @@ struct AgencyIndexView: View {
                         .background(.regularMaterial)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
-                    Divider()
                 }
             }
             .padding([.horizontal, .bottom])
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             requestInProgress = true
             let url = URL(string: APIRequestsAgent.agenciesEndpoint)!
